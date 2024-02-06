@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins';
+    background-color: #000000;
+    width: 100%;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    
+}
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 20px 20px;
+    transition: 0.6s;
+    z-index: 1000;
+}
+header.sticky {
+    padding: 10px 20px;
+    background-color: #000000;
+}
+header .brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.6s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 3%;
+}
+header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 3%
+}
+header .nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.6s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+#banner {
+    position: relative;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+}
+#banner h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: absolute;
+    width: 100%;
+}
+#banner h2 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.scroll-down {
+    bottom: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #a5a5a5;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+#about {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+}
+
+#about h1 {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#about p {
+    margin-top: 20px;
+    text-align: center;
+    left: 50%;
+    width: 60%;
+}
+
+.cityu {
+    color: #e9a55c;
+    text-decoration: none;
+}
+#about li {
+    list-style-type: none;
+    padding: 15px;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+.linkedin {
+    color: #ffffff;
+    transition: 0.6s;
+}
+.github {
+    color: #fff;
+    transition: 0.6s;
+}
+.email {
+    color: #ffffff;
+    transition: 0.6s
+}
+#about img {
+    border-radius: 360px;
+    border-color: #fff;
+    width: 300px
+}
+
+#resume {
+    color: #fff;
+    height: 40vh;
+}
+.resume-link {
+    color: #df8c69;
+    text-decoration: none;
+}
+
+
+
+@media screen {
+    header a:hover {
+        color: rgb(192, 192, 192);
+        text-shadow: #bababa 2px 1px;
+    }
+    .scroll-down:hover {
+        color: #fff;
+    }
+    .linkedin:hover {
+        color: #0077b5;
+    }
+    .github:hover {
+        color: #7d3d99;
+    }
+    .email:hover {
+        color: #df8c69;
+    }
+}
